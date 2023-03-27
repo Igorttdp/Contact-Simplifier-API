@@ -2,6 +2,68 @@
 
 Esta é a documentação da API Contact Simplifier, que permite aos usuários gerenciar contatos.
 
+## Como Rodar o APP
+
+<br>
+No terminal, digite:
+
+```
+git clone git@github.com:Igorttdp/Contact-Simplifier-API.git
+```
+
+```
+cd Contact-Simplifier-API
+```
+
+<br>
+
+Instale as dependências
+
+```
+npm install
+
+ou
+
+yarn install
+```
+
+<br>
+
+Configure o arquivo .env com suas credenciais:
+
+```
+PGHOST=localhost
+PGPORT=5432
+PGUSER=seuUsuário
+PGPASSWORD=suaSenha
+PGDATABASE=suaDatabase
+SECRET_KEY=suaSecretKey
+```
+
+<br>
+
+Rode as migrações:
+
+```
+npx typeorm migration:run -d src/data-source.ts
+
+ou
+
+yarn typeorm migration:run -d src/data-source.ts
+```
+
+<br>
+
+Inicialize a aplicação:
+
+```
+npm run dev
+
+ou 
+
+yarn dev
+```
+
 <br>
 
 ## Autenticação
