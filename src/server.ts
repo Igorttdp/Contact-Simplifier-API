@@ -6,7 +6,7 @@ import AppDataSource from "./data-source";
     console.error("Error during Data Sourcer initialization");
   });
 
-  app.listen(3000, () => {
+  app.listen(3003, () => {
     console.log("Server running on port 3000");
   });
 })();

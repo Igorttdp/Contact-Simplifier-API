@@ -59,9 +59,24 @@ Inicialize a aplicação:
 ```
 npm run dev
 
-ou 
+ou
 
 yarn dev
+```
+
+<br>
+
+Se tudo ocorrer bem você verá algo assim no seu terminal:
+
+```
+$ yarn dev
+yarn run v1.22.19
+$ ts-node-dev --ignore-watch node_modules src/server.ts
+[INFO] 05:04:13 ts-node-dev ver. 2.0.0 (using ts-node ver. 10.9.1, typescript ver. 5.0.2)
+query: SELECT * FROM current_schema()
+query: CREATE EXTENSION IF NOT EXISTS "uuid-ossp"
+query: SELECT version();
+Server running on port 3000
 ```
 
 <br>
