@@ -4,9 +4,11 @@ import "express-async-errors";
 import { errorHandler } from "./errors";
 import userRoutes from "./routers/user.routes";
 import contactRoutes from "./routers/contacts.routes";
+import cors from "cors";
 
 const app = express();
 app.use(express.json());
+app.use(cors({origin: "http://localhost:3000"}));
 
 app.use("", userRoutes);
 app.use("", contactRoutes);
