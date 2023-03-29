@@ -8,8 +8,6 @@ const createUserService = async (payload: IUserRequest) => {
   const user = userRepository.create(payload);
   await userRepository.save(user);
 
-  console.log(user);
-
   const validatedBody = createUserResponseSchema.validateSync(user, {
     abortEarly: false,
     stripUnknown: true,
