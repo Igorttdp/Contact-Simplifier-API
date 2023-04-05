@@ -7,6 +7,7 @@ import { Contact } from "./entities/contact.entity";
 
 // Migrations
 import { initial1679866426382 } from "./migrations/1679866426382-initial";
+import { addSecundaryPhone1680697306912 } from "./migrations/1680697306912-addSecundaryPhone";
 
 const AppDataSource = new DataSource({
   type: "postgres",
@@ -18,7 +19,7 @@ const AppDataSource = new DataSource({
   logging: true,
   synchronize: false,
   entities: [User, Contact],
-  migrations: [initial1679866426382],
+  migrations: [initial1679866426382, addSecundaryPhone1680697306912],
 });
 
 export default AppDataSource;
