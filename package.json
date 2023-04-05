@@ -22,7 +22,8 @@
     "pg": "^8.10.0",
     "reflect-metadata": "^0.1.13",
     "typeorm": "^0.3.12",
-    "yup": "^1.0.2"
+    "yup": "^1.0.2",
+    "typescript": "^5.0.2"
   },
   "devDependencies": {
     "@types/cors": "^2.8.13",
@@ -30,7 +31,6 @@
     "@types/express": "^4.17.17",
     "@types/jsonwebtoken": "^9.0.1",
     "@types/node": "^18.15.10",
-    "ts-node-dev": "^2.0.0",
-    "typescript": "^5.0.2"
+    "ts-node-dev": "^2.0.0"
   }
 }
