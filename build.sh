@@ -1,5 +1,4 @@
-!/usr/bin/env bash
-# exit on error
+// build.sh
 set -o errexit
 
 yarn install
