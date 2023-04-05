@@ -4,6 +4,5 @@
 set -o errexit
 
 yarn install
-yarn add global typescript
 yarn build
 yarn typeorm migration:run -d dist/data-source
