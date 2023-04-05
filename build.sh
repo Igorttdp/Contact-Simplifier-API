@@ -2,5 +2,5 @@
 set -o errexit
 
 yarn install
-yarn build
+yarn tsc
 yarn typeorm migration:run -d dist/data-source
