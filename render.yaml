@@ -1,0 +1,10 @@
+build:
+  image: render-examples/node:14
+  cmd: |
+    yarn install
+    yarn build
+
+run:
+  image: render-examples/node:14
+  cmd: yarn start
+  port: 3000

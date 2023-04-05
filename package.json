@@ -7,10 +7,9 @@
   "author": "Igorttdp <igorttdp.dev@email.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev --ignore-watch node_modules src/server.ts",
-    "typeorm": "typeorm-ts-node-commonjs",
     "start": "node dist/server.js",
-    "build": "tsc"
+    "build": "tsc",
+    "dev": "ts-node-dev --ignore-watch node_modules src/server.ts"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
