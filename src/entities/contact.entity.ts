@@ -25,6 +25,9 @@ export class Contact {
   @Column({ length: 11 })
   phone: string;
 
+  @Column({ length: 11, nullable: true })
+  secundary_phone: string;
+
   @CreateDateColumn()
   created_at: Date;
 
