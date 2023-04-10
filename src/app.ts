@@ -10,7 +10,7 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: ["https://contact-simplifier.vercel.app", "localhost:3000"],
+    origin: ["https://contact-simplifier.vercel.app", "http://localhost:3000"],
     credentials: true,
   })
 );
